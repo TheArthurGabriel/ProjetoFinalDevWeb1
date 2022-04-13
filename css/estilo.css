@@ -1,0 +1,812 @@
+@charset 'urf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#topo{
+    background-image: url(../img/praia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#nave {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista li a{
+    transition: 0.4s;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 0.6;
+    color: black;
+}
+
+#lista li a:hover{
+    opacity: 1;
+}
+
+#capa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#capa h1{
+    margin-top: 30px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+#capa p{
+    margin: 15px 30px;
+    font-size: 1em;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#capa video{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+#historia h2{
+    text-align: center;
+    margin: 30px 10px;
+
+}
+
+#historia h3{
+    text-align: center;
+}
+
+#historia p{
+    text-align: center;
+    margin: 10px 40px;
+}
+
+#historia figcaption{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#wilk{
+    background-image: url(../img/desafio-David-Wilkerson.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+#roque{
+    background-image: url(../img/desafio\ roque\ sete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+#tratamento{
+    background-image: url(../img/fundo_tratamento.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tratamento h3{
+    text-align: center; 
+    padding: 5%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#tratamento p{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 40px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.info div{
+    background-color: rgba(0, 0, 0, 0.555);
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.info p{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.info div img{
+    height: 100%;
+    width: 100%;
+}
+
+#carousel{
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#carousel h5{
+    text-shadow: 1px 1px 3px black;
+    background-color: rgba(0, 0, 0, 0.367);
+}
+
+#espaco{
+    height: 30px;
+}
+
+#unidade{
+    width: 100%;
+    background-image: url(../img/mordal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#unidade h3{
+    text-align: center; 
+    padding: 5%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#unidade p{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 40px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+#mortal{
+ width: 80%;
+ height: 60px;
+ font-size: 1.1em;
+ text-shadow: 1px 1px 2px black;
+ box-shadow: 1px 1px 5px black;
+ margin-bottom: 20px;
+ background-color: rgba(0, 0, 0, 0.884);
+ border: none;
+}
+
+.mover{
+    float: right;
+    margin: 10px;
+    color: white;
+}
+
+#unidade h4{
+    float: left;
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+.cor{
+    background-color: black;
+    border: none;
+}
+
+.mover:hover{
+    opacity: 0.5;
+    color: white;
+}
+
+#rodape{
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+}
+
+#redes_sociais{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 30px;
+    opacity: 0.6;
+    transition: 0.8;
+}
+
+#rodape h5{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+#rodape h6{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+#redes:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#topo figure{
+    background-image: url(../img/LOGO-DESAFIO-CINZA\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:700px){
+    #nave {
+        font-size: 2.3em;
+        margin-right: 40px;
+    }
+
+    #topo figure{
+        background-image: url(../img/LOGO-DESAFIO-CINZA\ \(2\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+    }
+
+    #boto{
+        width: 80px;
+        height: 70px;
+    }
+
+    #lista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #lista li a{
+        font-size: 1.7em;
+    }
+    
+    #lista li a:hover{
+        opacity: 1;
+    }
+
+    #capa p{
+        margin: 15px 80px;
+        font-size: 1.6em;
+        text-align: center;
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.692);
+        border-radius: 20px;
+        padding: 2%;
+    }
+    #capa h1{
+        margin-top: 30px;
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+
+    #historia h2{
+        text-align: center;
+        font-size: 3em;
+        margin: 30px 10px;
+    
+    }
+    
+    #historia h3{
+        text-align: center;
+        font-size: 2.3em;
+    }
+    
+    #historia p{
+        text-align: center;
+        margin: 10px 50px;
+        font-size: 1.7em;
+    }
+    
+    #historia figcaption{
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    #wilk{
+        background-image: url(../img/desafio-David-Wilkerson.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        border-radius: 100px;
+    }
+    
+    #roque{
+        background-image: url(../img/desafio\ roque\ sete.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        border-radius: 100px;
+    }
+
+    #tratamento h3{
+        font-size: 2.8em;
+        text-align: center; 
+        padding: 5%;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    #tratamento p{
+        font-size: 1.8em;
+        margin: 10px 60px;
+    }
+    
+    #fases, #metodos, #projetos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #fases p, #metodos p, #projetos p{
+        font-size: 1.6em;
+        margin: 0px 0px;
+    }
+    #fases h3, #metodos h3, #projeto h3{
+        font-size: 1.9em;
+    }
+
+    .card-body{
+        min-height: 620px;
+        max-height: 620px;
+    }
+
+    #carousel h5{
+        text-shadow: 1px 1px 3px black;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 1.9em;
+    }
+
+    #unidade h3{
+        font-size: 2.8em;
+        text-align: center; 
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    #unidade p{
+        font-size: 2em;
+        text-align: center;
+        margin: 10px 60px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        background-color: rgba(0, 0, 0, 0.395);
+    }
+
+    #mortal{
+        width: 90%;
+        height: 80px;
+        font-size: 1.6em;
+        text-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 5px black;
+        margin: 40px;
+        background-color: rgba(0, 0, 0, 0.884);
+        border: none;
+    }
+
+    #rodape h5{
+        color: white;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    #rodape h6{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #redes{
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+        margin: 30px;
+        opacity: 0.6;
+        transition: 0.8;
+    }
+
+    #redes_sociais{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width:1023px){
+
+    #nave {
+        font-size: 1.3em;
+        margin-left: 10px;
+        font-weight: 500;
+    }
+    
+    #topo figure{
+        background-image: url(../img/LOGO-DESAFIO-CINZA\ \(2\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+    }
+
+    #lista li a{
+        font-size: 1.4em;
+        float: right;
+    
+    }
+
+    #lista{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #capa p{
+        margin: 15px 230px;
+        font-size: 1.5em;
+    }
+
+    #capa h1{
+        margin-top: 40px;
+        font-size: 1.8em;
+    }
+
+    #capa video{
+        width: 70%;
+    }
+
+    #historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #conteudo_histo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #conteudo_histo div{
+        min-height: 1100px;
+        max-height: 1100px;
+    }
+
+    #historia h2{
+        text-align: center;
+        font-size: 2.7em;
+        margin: 30px 10px;
+    
+    }
+    
+    #historia h3{
+        text-align: center;
+        font-size: 2.4em;
+    }
+    
+    #historia p{
+        text-align: center;
+        margin: 10px 50px;
+        font-size: 1.6em;
+    }
+    
+    #historia figcaption{
+        font-size: 1.2em;
+    }
+    
+    #tratamento h3{
+        font-size: 2.7em;
+    }
+
+    #op{
+        font-size: 1.7em;
+        margin: 10px 100px;
+    }
+    
+    #fases, #metodos, #projetos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #fases p, #metodos p, #projetos p{
+        font-size: 1.4em ;
+        margin: 0px 0px;
+    }
+    .card-body{
+        min-height: 500px;
+        max-height: 500px;
+    }
+    #fases h3, #metodos h3, #projetos h3{
+        font-size: 1.6em;
+    }
+
+    #tratamento p{
+        font-size: 1.1em;
+        margin: 10px 10px;
+    }
+
+    #carouselExampleCaptions{
+        width: 80%;
+        margin: auto;
+    }
+
+    #unidade h3{
+        font-size: 2.5em;
+    }
+    
+    #unidade p{
+        font-size: 1.6em;
+        margin: 10px 80px;
+    }
+
+    #mortal{
+        width: 70%;
+        height: 60px;
+        font-size: 1.6em;
+        text-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 5px black;
+        margin: 40px;
+        background-color: rgba(0, 0, 0, 0.884);
+        border: none;
+    }
+
+    #rodape h5{
+        color: white;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    #rodape h6{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #redes{
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        margin: 30px;
+        opacity: 0.6;
+        transition: 0.8;
+    }
+
+    #redes_sociais{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:1300px){
+
+    #nave {
+        font-size: 1.2em;
+        margin-left: 10px;
+        font-weight: 500;
+    }
+    
+    #topo figure{
+        background-image: url(../img/LOGO-DESAFIO-CINZA\ \(2\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+    }
+
+    #lista li a{
+        font-size: 1.2em;
+        margin-left: 70px;
+    }
+
+    #lista{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #capa p{
+        margin: 15px 230px;
+        font-size: 1.2em;
+    }
+
+    #capa h1{
+        margin-top: 40px;
+        font-size: 1.4em;
+    }
+
+    #capa video{
+        width: 60%;
+    }
+
+    #historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #conteudo_histo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #conteudo_histo div{
+        min-height: 540px;
+        max-height: 540px;
+    }
+
+    #historia h2{
+        text-align: center;
+        font-size: 2.4em;
+        margin: 30px 10px;
+    
+    }
+    
+    #historia h3{
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    #historia p{
+        text-align: center;
+        margin: 10px 50px;
+        font-size: 1.1em;
+    }
+    
+    #historia figcaption{
+        font-size: 1.2em;
+    }
+    
+    #tratamento h3{
+        font-size: 2.4em;
+    }
+
+    #op{
+        font-size: 1.3em !important;
+        margin: 10px 160px !important;
+    }
+    
+    #fases, #metodos, #projetos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #fases p, #metodos p, #projetos p{
+        font-size: 1em;
+        margin: 0px 0px;
+    }
+    .card-body{
+        min-height: 360px;
+        max-height: 360px;
+    }
+    #fases h3, #metodos h3, #projetos h3{
+        font-size: 1.6em;
+    }
+
+    #tratamento p{
+        font-size: 1.1em;
+        margin: 10px 10px;
+    }
+
+    #carouselExampleCaptions{
+        width: 60%;
+        margin: auto;
+    }
+
+    #unidade h3{
+        font-size: 2.5em;
+    }
+    
+    #unidade p{
+        font-size: 1.6em;
+        margin: 10px 80px;
+    }
+
+    #mortal{
+        width: 70%;
+        height: 60px;
+        font-size: 1.6em;
+        text-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 5px black;
+        margin: 40px;
+        background-color: rgba(0, 0, 0, 0.884);
+        border: none;
+    }
+
+    #rodape h5{
+        color: white;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    #rodape h6{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #redes{
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        margin: 30px;
+        opacity: 0.6;
+        transition: 0.8;
+    }
+
+    #redes_sociais{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
